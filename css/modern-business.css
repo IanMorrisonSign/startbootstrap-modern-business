@@ -17,6 +17,14 @@ body {
   background-size: cover;
 }
 
+<!-- use the font -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+    }
+  </style>
+
 .portfolio-item {
   margin-bottom: 30px;
 }
