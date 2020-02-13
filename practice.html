@@ -21,12 +21,36 @@
 
 <body>
 
-  <br>
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+.feature-card {
+  box-shadow: 0 13px 34px 0 rgba(75, 111, 255, 0.09);
+  background: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 4rem 1.5rem 3rem 1.5rem;
+  min-height: 26rem;
+  display: block;
+  position: relative;
+  text-align: left;
+  text-decoration: none !important;
+  -webkit-transition: box-shadow ease 0.3s;
+  -o-transition: box-shadow ease 0.3s;
+  transition: box-shadow ease 0.3s;
+}
+.feature-card:hover {
+  box-shadow: 5px 5px 35px 10px rgba(75, 111, 255, 0.09);
+}
+.feature-card h3 {
+  color: #32404E;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+.feature-card p {
+  color: #878baa;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
