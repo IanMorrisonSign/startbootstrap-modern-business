@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Sizing Columns Based on the Width of their Content</title>
+<title>Bootstrap 4 Vertical Alignments of Grid Columns</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -11,11 +11,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
 	/* Some custom styles to beautify this example */
-    .row{     
+    .row{
+		min-height: 10rem;        
         margin-top: 1rem;
         background: #dbdfe5;
     }
-    [class^=col]{
+    .col{
         padding: 10px 15px;
         background: #abb1b8;
         border: 1px solid rgba(0,0,0,0.5)
@@ -23,18 +24,22 @@
 </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-3">Column left</div>
-            <div class="col-md-auto">Variable width column</div>
-            <div class="col-md-3">Column right</div>
-        </div>
-        <div class="row">
-            <div class="col">Column left</div>
-            <div class="col-auto">Variable width column</div>
-            <div class="col">Column right</div>
-        </div>
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">Column one</div>
+        <div class="col">Column two</div>
+        <div class="col">Column three</div>
     </div>
-    <p class="text-center mt-3"><strong>Note:</strong> Enter some more content inside the variable width column to understand how it works.</p>
+    <div class="row align-items-center">
+        <div class="col">Column one</div>
+        <div class="col">Column two</div>
+        <div class="col">Column three</div>
+    </div>
+    <div class="row align-items-end">
+        <div class="col">Column one</div>
+        <div class="col">Column two</div>
+        <div class="col">Column three</div>
+    </div>
+</div>
 </body>
 </html>                            
