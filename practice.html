@@ -3,41 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Bootstrap 4 Grid Layouts for Large Devices</title>
+<title>Sizing Columns Based on the Width of their Content</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <style>
-    /* Some custom styles to beautify this example */
-    p{
-        padding: 50px;
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
+	/* Some custom styles to beautify this example */
+    .row{     
+        margin-top: 1rem;
         background: #dbdfe5;
+    }
+    [class^=col]{
+        padding: 10px 15px;
+        background: #abb1b8;
+        border: 1px solid rgba(0,0,0,0.5)
     }
 </style>
 </head>
 <body>
-    <h2 class="text-center my-3">Bootstrap Responsive Layout</h2>
-	<div class="text-center">Open the output in a new blank tab (Click the arrow next to "Show Output" button) and resize the browser window to understand how the Bootstrap responsive grid system works.</div>
-    <div class="container mt-3">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-3">Column left</div>
+            <div class="col-md-auto">Variable width column</div>
+            <div class="col-md-3">Column right</div>
+        </div>
         <div class="row">
-            <div class="col-lg-4"><p>Box 1</p></div>
-            <div class="col-lg-4"><p>Box 2</p></div>
-            <div class="col-lg-4"><p>Box 3</p></div>
-            <div class="col-lg-4"><p>Box 4</p></div>
-            <div class="col-lg-4"><p>Box 5</p></div>
-            <div class="col-lg-4"><p>Box 6</p></div>
-            <div class="col-lg-4"><p>Box 7</p></div>
-            <div class="col-lg-4"><p>Box 8</p></div>
-            <div class="col-lg-4"><p>Box 9</p></div>
-            <div class="col-lg-4"><p>Box 10</p></div>
-            <div class="col-lg-4"><p>Box 11</p></div>
-            <div class="col-lg-4"><p>Box 12</p></div>
+            <div class="col">Column left</div>
+            <div class="col-auto">Variable width column</div>
+            <div class="col">Column right</div>
         </div>
     </div>
+    <p class="text-center mt-3"><strong>Note:</strong> Enter some more content inside the variable width column to understand how it works.</p>
 </body>
 </html>                            
